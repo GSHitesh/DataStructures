@@ -12,12 +12,12 @@ class Solution:
         """
         prev = ListNode()
  
-        if(node == None):
-            return
-        else:
-            temp = ListNode()
-            temp = node.next;
-            node.val = temp.val;
-            node.next = temp.next;
-            temp = None;
+        # if(node == None):
+        #     return
+        # else:
+        temp = ListNode()
+        temp = node.next;
+        node.val = temp.val;
+        node.next = temp.next;
+        temp = None;
         
